@@ -41,6 +41,7 @@
     gap: 10px;
     padding: 15px;
     background-color: whitesmoke;
+    border-radius: 15px;
     box-shadow: 2px 1px 1px rgb(179, 178, 178);
     width: 22%;
     height: auto;
@@ -94,7 +95,7 @@
 }
 .form{
     width: 350px;
-    position: absolute;
+    position: fixed;
     top: 35%;
     left: 35%;
     border-radius: 20px;
@@ -122,4 +123,9 @@
 .form::backdrop{
     background-color: rgb(173, 173, 173);
     opacity: .7;
+}
+.cards{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
