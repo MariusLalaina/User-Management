@@ -34,7 +34,7 @@
   <div class="main_content">
     <div class="top">
       <h1 class="brand">User Management</h1>
-      <button type="button">Add User +</button>
+      <button type="button" class="add">Add User +</button>
     </div><!--top-->
     <div class="cards">
       <!-- génération auto des card -->
@@ -67,6 +67,20 @@
       </div><!--profil_active-->
       </div><!--card-->
     </div><!--cards-->
+    <div class="blur">
+    <dialog class="form">
+      <label for="profil_avatar">Choose your avatar :</label>
+      <input type="file" name="profil_avatar" class="profil_avatar">
+      <label for="user">User Name :</label>
+      <input type="text" name="userName" id="user">
+      <label for="mail">Email :</label>
+      <input type="email" name="mail" id="mail">
+      <div class="btn-form">
+      <button class="done">Done</button>
+      <button class="close">Close</button>
+      </div><!--btn-form-->
+    </dialog><!--form-->
+    </div>
   </div><!--main_content-->
   <script src="main.js"></script>
 </body>
