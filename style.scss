@@ -43,9 +43,10 @@
     background-color: whitesmoke;
     border-radius: 15px;
     box-shadow: 2px 1px 1px rgb(179, 178, 178);
-    width: 22%;
+    width: auto;
     height: auto;
     .avatar {
+        border: 1px solid black;
         width: 80px;
         height: 80px;
         border-radius: 100%;
@@ -56,14 +57,12 @@
         flex-direction: column;
         gap: 15px;
     }
+    
 }
 .profil:hover{
-    padding: 20px;
-    .avatar{
-        width: 30%;
-        height: 70px;
-    }
+    padding: 0 40px 0 15px;
 }
+
 .main_content{
     .top{
         display: flex;
@@ -92,6 +91,7 @@
     margin-top: -24%;
     gap: 5px;
     display: none;
+    
 }
 .form{
     width: 350px;
@@ -121,11 +121,17 @@
     }
 }
 .form::backdrop{
-    background-color: rgb(173, 173, 173);
-    opacity: .7;
+    background-color: rgb(194, 194, 194);
+    opacity: .8;
 }
 .cards{
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+}
+.trash{
+    display: none;
+}
+.edit{
+    display: none;
 }
