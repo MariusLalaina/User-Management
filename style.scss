@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: monospace;
 }
 
 .menu {
@@ -33,4 +34,104 @@
         border-radius: 100%;
         object-fit: cover;
     }
+}
+.profil{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 2px 1px 1px rgb(179, 178, 178);
+    width: auto;
+    height: auto;
+    .avatar {
+        border: 1px solid black;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+}
+.profil:hover{
+    padding: 0 40px 0 15px;
+}
+
+.main_content{
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        margin: 1% 5%;
+    
+        .brand{
+            color: rgb(0, 139, 139);
+        }
+        button{
+            font-size: 14px;
+            color: white;
+            background-color: rgba(3, 180, 180, 0.801);
+            padding: 10px;
+            border-radius: 20px;
+        }
+    }
+}
+.cards{
+    margin: 0 40px;
+}
+.action{
+    align-items: center;
+    margin-top: -24%;
+    gap: 5px;
+    display: none;
+    
+}
+.form{
+    width: 350px;
+    position: fixed;
+    top: 35%;
+    left: 35%;
+    border-radius: 20px;
+    background-color:  rgba(197, 226, 226, 0.719);
+    padding: 20px;
+    input{
+        padding: 5px;
+    }
+    .btn-form{
+        display: flex;
+        justify-content: space-evenly;
+
+        .done{
+            background-color: rgba(9, 153, 9, 0.685);
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .close{
+            background-color: rgba(185, 0, 0, 0.74);
+            padding: 10px;
+            border-radius: 15px;
+        }
+    }
+}
+.form::backdrop{
+    background-color: rgb(194, 194, 194);
+    opacity: .8;
+}
+.cards{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.trash{
+    display: none;
+}
+.edit{
+    display: none;
 }
